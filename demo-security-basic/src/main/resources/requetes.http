@@ -1,0 +1,33 @@
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+Authorization: Basic oz oz
+
+{"txt" : "ok."}
+
+###
+
+POST http://localhost:8080/api/utilisateurs
+Content-Type: application/json
+Authorization: Basic admin admin
+
+{"login" : "oz", "mdp" :  "oz", "isAdmin": true}
+
+###
+
+GET http://localhost:8080/api/messages
+###
+
+GET http://localhost:8080/api/messages/2
+Authorization: Basic ju ju
+
+###
+
+GET http://localhost:8080/api/utilisateurs/ju
+Authorization: Basic admin admin
+
+###
+
+DELETE http://localhost:8080/api/messages/1
+Authorization: Basic oz oz
+
+###

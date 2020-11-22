@@ -1,0 +1,22 @@
+# curl -X GET http://localhost:8080/api/messages/subscribe  pour voir les notifications
+
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+
+{"txt" : "ok."}
+
+###
+
+GET http://localhost:8080/api/messages
+###
+
+GET http://localhost:8080/api/messages/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1ODg0MjMzODZ9.-FxZKrfEef3IqNtGGGrEe4F2SRtCB4XFgG5YNaNl9dE
+
+
+###
+
+DELETE http://localhost:8080/api/messages/1
+Authorization: Basic oz oz
+
+###

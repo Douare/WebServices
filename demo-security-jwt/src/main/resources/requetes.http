@@ -1,0 +1,42 @@
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1ODg0MjQwNjF9.LmPQf_E71op07-ZzTCECCSNddQBNMkSIKJxCwmB_fjw
+
+{"txt" : "ok."}
+
+###
+
+POST http://localhost:8080/api/utilisateurs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1ODg0MjQwNjF9.LmPQf_E71op07-ZzTCECCSNddQBNMkSIKJxCwmB_fjw
+
+{"login" : "oz", "mdp" :  "oz", "isAdmin": true}
+
+###
+
+GET http://localhost:8080/api/messages
+###
+
+GET http://localhost:8080/api/messages/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1ODg0MjMzODZ9.-FxZKrfEef3IqNtGGGrEe4F2SRtCB4XFgG5YNaNl9dE
+
+
+###
+
+GET http://localhost:8080/api/utilisateurs/ju
+Authorization: Basic admin admin
+
+###
+
+DELETE http://localhost:8080/api/messages/1
+Authorization: Basic oz oz
+
+###
+
+POST http://localhost:8080/api/login?username=ju&password=ju
+
+###
+
+POST http://localhost:8080/api/login?username=admin&password=admin
+
+###
